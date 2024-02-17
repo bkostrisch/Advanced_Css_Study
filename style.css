@@ -1,64 +1,51 @@
 
-/* Put a background in this 3 elemens at the same time */
+/* Put a background in each element using the width property */
 
-/* p, header, h2 {
+/* [width] {
 
-background-color: pink;
+ background-color: pink;
 
 } */
 
+/* Put a background in each element using the width property equals to 500 */
 
-/* Put a background only in the element that has the p2 class and in the h2 element type */
 
-/* .p2, h2 {
+/* [width="500"] {
 
     background-color: pink;
-    
+   
 } */
 
+/* Put a background in each element using the title property with the "title" value */
 
-/* Put a background in each p element in a div */
-
-/* div p {
-
-        background-color: pink;
-        
-} */
-
-
-/* Put a background in each p element inside the element with the head id */
-
-/* #head p {
+/* [title~="title"] {
 
     background-color: pink;
-    
+   
 } */
 
 
-/* Put a background in each p child element from the head id */
+/* Put a background in each element using the title property which the value starts with the "t" letter */
 
-/* 
-#head > p {
+/* [title^="t"] {
 
     background-color: pink;
-    
+   
 } */
 
 
-/* Put a background in the next element closest to head id which is a p element */
+/* Put a background in each element using the title property which the value ends with the "1" number */
 
-/* #head + p {
+/* [title$="1"] {
 
     background-color: pink;
-    
+   
 } */
 
-/* Put a bakcground in each p element after the header */
+/* Put a background in each element using the title property which the value contains the "tle" letters in any position */
 
-/* 
-header ~ p {
+[title*="tle"] {
 
     background-color: pink;
-    
-} */
-
+   
+}
