@@ -1,34 +1,64 @@
-p::first-line{
 
-    color: red;
-    
+/* Put a background in this 3 elemens at the same time */
 
-}
+/* p, header, h2 {
 
-li {
+background-color: pink;
 
-    list-style: none;
-    margin-left: 10px;
-    /* list-style-image: url("./img/Icon.png"); */
+} */
 
-}
 
-li::before {
+/* Put a background only in the element that has the p2 class and in the h2 element type */
 
-    content: ' ' ;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url(./img/Icon.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-right: 15px;
-
-}
-
-p::selection {
+/* .p2, h2 {
 
     background-color: pink;
-    color: blueviolet;
-}
+    
+} */
+
+
+/* Put a background in each p element in a div */
+
+/* div p {
+
+        background-color: pink;
+        
+} */
+
+
+/* Put a background in each p element inside the element with the head id */
+
+/* #head p {
+
+    background-color: pink;
+    
+} */
+
+
+/* Put a background in each p child element from the head id */
+
+/* 
+#head > p {
+
+    background-color: pink;
+    
+} */
+
+
+/* Put a background in the next element closest to head id which is a p element */
+
+/* #head + p {
+
+    background-color: pink;
+    
+} */
+
+/* Put a bakcground in each p element after the header */
+
+/* 
+header ~ p {
+
+    background-color: pink;
+    
+} */
+
