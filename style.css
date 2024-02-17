@@ -1,0 +1,34 @@
+p::first-line{
+
+    color: red;
+    
+
+}
+
+li {
+
+    list-style: none;
+    margin-left: 10px;
+    /* list-style-image: url("./img/Icon.png"); */
+
+}
+
+li::before {
+
+    content: ' ' ;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(./img/Icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 15px;
+
+}
+
+p::selection {
+
+    background-color: pink;
+    color: blueviolet;
+}
