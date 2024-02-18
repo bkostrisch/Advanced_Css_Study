@@ -41,6 +41,7 @@ div {
     height: 300px;
     -webkit-transform: skew(30deg, 30deg) scale(0.7, 1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
     -ms-transform: skew(30deg, 30deg) scale(0.7, 1); /* IE 9 */
+    -moz-transform:  skew(30deg, 30deg) scale(0.7, 1); /* Firefox */
     transform: skew(30deg, 30deg) scale(0.7, 1); /* IE 10, Fx 16+, Op 12.1+ */
     background-color: purple;
 
