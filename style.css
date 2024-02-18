@@ -1,51 +1,95 @@
+/* Make the customization work only in the input you're using */
 
-/* Put a background in each element using the width property */
+input:focus{
 
-/* [width] {
+    color: purple;
 
- background-color: pink;
+}
+
+/* Apply changes in the first child element inside a father element */
+
+/* li:first-child {
+
+    color: pink;
 
 } */
 
-/* Put a background in each element using the width property equals to 500 */
+
+/* Apply changes in the first element of the type inside some father element */
+
+/* li:first-of-type {
 
 
-/* [width="500"] {
+    color: pink;
 
-    background-color: pink;
-   
 } */
 
-/* Put a background in each element using the title property with the "title" value */
+/* Allows you to choose which respective element you want to change with his number position */
 
-/* [title~="title"] {
+/* li:nth-child(2) {
 
-    background-color: pink;
-   
+
+    background-color: purple;
+    color: pink;
+
+}
+
+li:nth-of-type(2) {
+
+
+    background-color: purple;
+    color: pink;
+
+} */
+
+/* Allows you to choose which respective element you want to change with his number position from the end to the begining */
+/* 
+li:nth-last-child(2) {
+
+
+    background-color: purple;
+    color: pink;
+
 } */
 
 
-/* Put a background in each element using the title property which the value starts with the "t" letter */
+/* Change elements that are divisible by 2 */
 
-/* [title^="t"] {
+/* li:nth-child(2n) {
 
-    background-color: pink;
-   
+
+    background-color: purple;
+    color: pink;
+
 } */
 
+li {
 
-/* Put a background in each element using the title property which the value ends with the "1" number */
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 
-/* [title$="1"] {
+}
+
+li:nth-child(even) {
+
+
+    background-color: purple;
+    color: pink;
+
+}
+
+li:nth-child(odd) {
+
 
     background-color: pink;
-   
-} */
+    color: purple;
 
-/* Put a background in each element using the title property which the value contains the "tle" letters in any position */
+}
 
-[title*="tle"] {
+ul {
 
-    background-color: pink;
-   
+    margin: 0;
+    padding: 0;
+
 }
