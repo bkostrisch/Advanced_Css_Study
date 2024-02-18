@@ -33,11 +33,15 @@ img {
 
 }
 
+
+/* Make it works in browsers with other versions */
 div {
 
     width: 420px;
     height: 300px;
-    transform: skew(30deg, 30deg) scale(0.7, 1);
+    -webkit-transform: skew(30deg, 30deg) scale(0.7, 1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: skew(30deg, 30deg) scale(0.7, 1); /* IE 9 */
+    transform: skew(30deg, 30deg) scale(0.7, 1); /* IE 10, Fx 16+, Op 12.1+ */
     background-color: purple;
 
 
