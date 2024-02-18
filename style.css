@@ -2,37 +2,43 @@ body {
 
     margin: 0;
     padding: 0;
-    background-color: cyan;
-
-}
-
-
-.container{
-
-    width: 100%;
     background-color: pink;
 
 }
 
-.first {
 
-    display: inline-block;
-    margin-right: -4px;
-    margin-bottom: -4px;
-    width: calc(100% - 300px);
-    height: 300px;
-    background-color: purple;
+/* Rotates the img in the angle you choose */
+/* img {
+
+    width:   420px;
+    transform: rotate(45deg);
+
+} */
+
+
+
+/* Increase or decrease the img size the direction you choose (x,y) */
+/* img {
+
+    width:   420px;
+    transform: scale(2,1);
+
+} */
+
+/* Deform the image based in the angle you choose */
+img {
+
+    width:   420px;
+    transform: skew(40deg);
 
 }
 
-.second {
+div {
 
-    display: inline-block;
-    margin-right: -4px;
-    margin-bottom: -4px;
-    width: 300px;
+    width: 420px;
     height: 300px;
-    background-color: blueviolet;
+    transform: skew(30deg, 30deg) scale(0.7, 1);
+    background-color: purple;
 
 
 }
